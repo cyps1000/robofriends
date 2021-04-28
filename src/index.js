@@ -9,6 +9,7 @@ import "tachyons";
 
 import "./index.css";
 import App from "./containers/App";
+import registerServiceWorker from "./registerServiceWorker";
 const logger = createLogger();
 
 const rootReducer = combineReducers({ requestRobots, searchRobots });
@@ -25,3 +26,5 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById("root")
 );
+
+registerServiceWorker();
